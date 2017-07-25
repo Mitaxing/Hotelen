@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_960"
+    android:background="@mipmap/cover_welcome"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a0ffffff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_60"
+        android:layout_marginRight="@dimen/w_60"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_104" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wel_hello"
+            android:textColor="#333333"
+            android:textSize="@dimen/h_32" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_68" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wel_hotel_name"
+            android:textColor="#333333"
+            android:textSize="@dimen/h_50" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_68" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="@dimen/h_28"
+            android:maxLines="4"
+            android:text="@string/wel_hotel_content"
+            android:textColor="#333333"
+            android:textSize="@dimen/h_32" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/h_122"
+        android:layout_marginRight="@dimen/w_246"
+        android:text="@string/signature_manager"
+        android:textColor="#333333"
+        android:textSize="@dimen/h_32" />
+
+    <ImageView
+        android:layout_width="@dimen/w_186"
+        android:layout_height="@dimen/h_68"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/h_110"
+        android:layout_marginRight="@dimen/w_60"
+
+        android:src="@mipmap/signature" />
+</FrameLayout>

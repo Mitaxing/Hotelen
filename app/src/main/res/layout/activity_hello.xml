@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f7">
+
+    <include
+        layout="@layout/layout_hello"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_44"
+        android:layout_marginLeft="@dimen/w_60"
+        android:layout_marginRight="@dimen/w_60"
+        android:layout_marginTop="@dimen/h_60" />
+
+    <ImageView
+        android:id="@+id/wel_img"
+        android:src="@mipmap/low_hotel"
+        android:layout_width="@dimen/w_1200"
+        android:layout_height="@dimen/h_760"
+        android:layout_marginTop="@dimen/h_148" />
+
+    <include
+        layout="@layout/layout_welcome_banner"
+        android:layout_width="@dimen/w_960"
+        android:layout_height="@dimen/h_760"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/h_148" />
+
+    <Button
+        android:onClick="enterClickMethod"
+        android:layout_width="@dimen/w_320"
+        android:layout_height="@dimen/h_60"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/h_72"
+        android:background="@drawable/style_btn_wel_enter"
+        android:text="@string/wel_enter"
+        android:textColor="@color/logo_color"
+        android:textSize="@dimen/h_30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/h_87"
+        android:layout_marginLeft="@dimen/w_280"
+        android:text="@string/wel_enter_tip"
+        android:textColor="#535353"
+        android:textSize="@dimen/h_24" />
+
+</FrameLayout>

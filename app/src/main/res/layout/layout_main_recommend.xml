@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main_recommend">
+
+    <View
+        android:layout_width="@dimen/w_8"
+        android:layout_height="@dimen/h_40"
+        android:layout_marginLeft="@dimen/w_42"
+        android:layout_marginTop="@dimen/h_60"
+        android:background="#fcc100" />
+
+    <TextView
+        android:id="@+id/main_recommend_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_68"
+        android:layout_marginTop="@dimen/h_53"
+        android:textColor="#fcc100"
+        android:textSize="@dimen/h_40" />
+
+    <TextView
+        android:id="@+id/main_recommend_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_recommend_type"
+        android:layout_marginLeft="@dimen/w_42"
+        android:layout_marginTop="@dimen/h_28"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h_50" />
+
+    <TextView
+        android:id="@+id/main_recommend_content"
+        android:layout_width="@dimen/w_314"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_recommend_title"
+        android:layout_marginLeft="@dimen/w_42"
+        android:layout_marginTop="@dimen/h_28"
+        android:lineSpacingExtra="@dimen/h_8"
+        android:maxLines="8"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h_30" />
+
+</RelativeLayout>

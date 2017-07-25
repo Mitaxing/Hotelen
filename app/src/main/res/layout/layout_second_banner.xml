@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/second_main_recommend_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/recommend_bg" />
+
+    <ImageView
+        android:layout_width="@dimen/w_595"
+        android:layout_height="match_parent"
+        android:src="@mipmap/cover_second_home" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/w_30"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="@dimen/w_148"
+            android:layout_height="@dimen/h_50"
+            android:layout_marginTop="@dimen/h_40">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:lottie_colorFilter="#fcc100"
+                app:lottie_fileName="label.json" />
+
+            <TextView
+                android:id="@+id/second_main_recommend_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/w_20"
+                android:textColor="#fcc100"
+                android:textSize="@dimen/h_30" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_30" />
+
+        <TextView
+            android:id="@+id/second_main_recommend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_50" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_30" />
+
+        <com.kupa.hotel.view.JustifyTextView
+            android:id="@+id/second_main_recommend_content"
+            android:layout_width="@dimen/w_314"
+            android:layout_height="@dimen/h_366"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/h_10"
+            android:maxLines="8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_30" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_second_main_play"
+        android:layout_width="@dimen/w_288"
+        android:layout_height="@dimen/h_230"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/h_30"
+        android:layout_marginRight="@dimen/w_25" />
+
+</FrameLayout>

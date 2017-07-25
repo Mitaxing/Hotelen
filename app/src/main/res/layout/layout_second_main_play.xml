@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_288"
+    android:layout_height="@dimen/h_230">
+
+    <ImageView
+        android:id="@+id/iv_second_main_banner"
+        android:layout_width="@dimen/w_60"
+        android:layout_height="@dimen/w_60"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/w_35"
+        android:layout_marginTop="@dimen/h_36"
+        android:background="@drawable/bg_circle"
+        android:focusable="true"
+        android:padding="@dimen/h_10"
+        android:src="@mipmap/main_banner_normal" />
+
+    <ImageView
+        android:id="@+id/iv_second_main_play"
+        android:layout_width="@dimen/w_60"
+        android:layout_height="@dimen/w_60"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/h_39"
+        android:layout_marginRight="@dimen/w_35"
+        android:layout_marginTop="@dimen/h_40"
+        android:background="@drawable/bg_circle"
+        android:focusable="true"
+        android:padding="@dimen/h_10"
+        android:src="@mipmap/main_play_normal" />
+
+    <FrameLayout
+        android:id="@+id/main_second_banner_layout"
+        android:layout_width="@dimen/w_288"
+        android:layout_height="@dimen/h_136"
+        android:background="@mipmap/focus_banner"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="@dimen/w_216"
+            android:layout_height="@dimen/h_65"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_home_play_focus"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/w_50"
+            android:text="Switch"
+            android:textColor="@color/white"
+            android:textScaleX="1.1"
+            android:textSize="@dimen/h_30" />
+
+        <ImageView
+            android:layout_width="@dimen/w_40"
+            android:layout_height="@dimen/h_40"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/w_45"
+            android:src="@mipmap/main_banner_focus" />
+
+        <ImageView
+            android:layout_width="@dimen/w_220"
+            android:layout_height="@dimen/h_69"
+            android:layout_gravity="center"
+            android:background="@drawable/border_refresh" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/main_second_play_layout"
+        android:layout_width="@dimen/w_288"
+        android:layout_height="@dimen/h_136"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/focus_banner"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="@dimen/w_216"
+            android:layout_height="@dimen/h_65"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_home_play_focus"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/w_60"
+            android:text="Show"
+            android:textColor="@color/white"
+            android:textScaleX="1.1"
+            android:textSize="@dimen/h_30" />
+
+        <ImageView
+            android:layout_width="@dimen/w_40"
+            android:layout_height="@dimen/h_40"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/w_45"
+            android:src="@mipmap/main_play_focus" />
+
+        <ImageView
+            android:layout_width="@dimen/w_220"
+            android:layout_height="@dimen/h_69"
+            android:layout_gravity="center"
+            android:background="@drawable/border_refresh" />
+    </FrameLayout>
+
+
+</FrameLayout>

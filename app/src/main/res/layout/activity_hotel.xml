@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity_hotel">
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_174" />
+
+    <FrameLayout
+        android:layout_width="@dimen/w_900"
+        android:layout_height="@dimen/h_800"
+        android:layout_marginLeft="@dimen/w_138"
+        android:layout_marginTop="@dimen/h_174"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_75"
+            android:layout_marginRight="@dimen/w_75"
+            android:layout_marginTop="@dimen/h_68"
+            android:lineSpacingExtra="@dimen/h_8"
+            android:maxLines="7"
+            android:text="XX hotel is a leisure green hotel integrating accommodation, catering, entertainment and conference.The hotel is located in the scenic beauty of the national 4A scenic lake, the geographical location is advantaged, natural resources are very superior.Castle peak yoho here, bibo heroine, gurgling springs, flowers, lush vegetation, fresh air, is a natural natural oxygen bar, is far away from the hustle and bustle, you relax place of good have a rest."
+            android:textColor="#535353"
+            android:textSize="@dimen/h_22" />
+
+        <ImageView
+            android:layout_width="@dimen/w_750"
+            android:layout_height="@dimen/h_422"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/h_60"
+            android:src="@mipmap/img_hotel" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hotel_server"
+        android:layout_width="@dimen/w_500"
+        android:layout_height="@dimen/h_720"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/w_190"
+        android:layout_marginTop="@dimen/h_220" />
+
+</FrameLayout>

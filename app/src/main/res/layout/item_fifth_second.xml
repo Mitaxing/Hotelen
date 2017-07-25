@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_372"
+    android:layout_height="@dimen/h_202"
+    android:layout_marginRight="@dimen/w_5">
+
+    <LinearLayout
+        android:id="@+id/item_second_layout"
+        android:layout_width="@dimen/w_300"
+        android:layout_height="@dimen/h_130"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="@dimen/w_40"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/item_second_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/w_80"
+            android:layout_height="@dimen/h_80" />
+
+        <Space
+            android:layout_width="@dimen/w_15"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_26" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_second_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/focus_second_server"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/item_second_focus_border"
+        android:layout_width="@dimen/w_308"
+        android:layout_height="@dimen/h_138"
+        android:layout_gravity="center"
+        android:background="@drawable/border_second_server"
+        android:visibility="gone" />
+
+</FrameLayout>

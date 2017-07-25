@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/w_196"
+        android:layout_height="@dimen/h_60"
+        android:src="@mipmap/hotel_black_logo" />
+
+    <FrameLayout
+        android:id="@+id/main_weather_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <View
+            android:layout_width="@dimen/w_1"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_30"
+            android:text="@string/wel_date"
+            android:textColor="#333333"
+            android:textSize="@dimen/h_24" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/w_30"
+            android:text="@string/no_weather_information"
+            android:textColor="#333333"
+            android:textSize="@dimen/h_24" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/w_30"
+        android:layout_marginTop="-10dp"
+        android:layout_toLeftOf="@id/main_weather_item"
+        android:text="13 : 14"
+        android:textColor="#333333"
+        android:textSize="@dimen/h_65" />
+</RelativeLayout>
