@@ -74,5 +74,5 @@
         android:layout_marginBottom="@dimen/h_110"
         android:layout_marginRight="@dimen/w_60"
 
-        android:src="@mipmap/signature" />
+        android:src="@mipmap/signature_en" />
 </FrameLayout>

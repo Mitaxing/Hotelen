@@ -46,8 +46,8 @@ public class ViewInfoAdapter extends RecyclerView.Adapter<ViewInfoAdapter.ViewIn
     @Override
     public void onBindViewHolder(ViewInfoViewHolder holder, final int position) {
         holder.mTvIntroduce.setText(introduce[position]);
-        x.image().bind(holder.img,"assets://yulongxueshan.jpg");
-//        holder.img.setBackgroundResource(views[position]);
+//        x.image().bind(holder.img,"assets://yulongxueshan.jpg");
+        holder.img.setBackgroundResource(views[position]);
         holder.itemView.setFocusable(true);
         holder.itemView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
